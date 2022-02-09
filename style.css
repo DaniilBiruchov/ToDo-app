@@ -1,0 +1,181 @@
+body {
+  padding: 10px;
+  background: rgba(224, 199, 199, 0.952);
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.island {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.formCheck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.todo {
+  display: flex;
+}
+
+.form-check-input {
+  font-size: 20px;
+}
+
+
+.todo .form-check-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.island__item {
+  padding: 20px 20px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.island__item + .island__item {
+  border-top: 1px solid rgb(233, 233, 233);
+}
+
+.island__item_checked {
+  order: 2;
+}
+
+.island__item_edit .form-edit {
+  display: flex;
+}
+
+.island__item_edit label {
+  display: none;
+}
+
+.island__item_edit .btn-edit {
+  display: none;
+}
+
+.island__item_checked label {
+  text-decoration: line-through;
+}
+
+.search {
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  display: none;
+}
+
+.search.open {
+  display: block;
+}
+
+#search {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btnSearch {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+.form-search {
+  width: 60%
+}
+
+.priority-search {
+  width: 20%
+}
+
+
+#formCreate {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.form-control {
+  width: 60%;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.form-number {
+  width: 7%;
+}
+
+.priority {
+  width: 8%;
+}
+
+.btnSubmit {
+  width: 15%;
+  color: white;
+  background: blue;
+  padding: 7px 0;
+  font-size: 16px;
+  border: none;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCheck {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0;
+  border: 0;
+  color: red;
+  background: none;
+  font-size: 13px;
+}
+
+.form-edit {
+  display: none;
+}
+
+.btn-save {
+  margin-left: 20px;
+}
+
+.btn-save {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 18px;
+}
+
+.btn-edit {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  color: rgb(116, 192, 2);
+  margin-right: 10px;
+}
+
+
+span {
+  font-size: 14px;
+}

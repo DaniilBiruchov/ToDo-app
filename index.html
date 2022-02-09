@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Task</h1>
+        <div class="island">
+            <div class="island__item">
+                <form id="formCreate">
+                    <input type="text" class="form-control" name='title' id="title" placeholder="Задача">
+
+                    <select name="priority" class="priority">
+                        <option value="1" selected>⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                    </select>
+                    <input type="number" class="form-number" name="estimate" placeholder="Оценка">
+                    <button type="submit" class="btnSubmit">Записать</button>
+                </form>
+            </div>
+        </div>
+        <button tupe="submit" id="btnSearch">🔍</button>
+        <div class="search">
+            <!-- <div class="search__item"> -->
+                <div id="search">
+                    <input type="text" class="form-search" id="searchTitle" placeholder="Поиск по заголовку">
+                    <select id="sort">
+                        <option value="" selected>Сортировка</option>
+                        <option value="priority">Поиск по приоритету</option>
+                        <option value="estimate">Поиск по оценке</option>
+                    </select>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="island" id="list">
+            <div class="island__item text-muted">Список пуст🌟✭🔍</div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
